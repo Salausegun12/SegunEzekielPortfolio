@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <defs>
+    <linearGradient id="bg-dual" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161534"/>
+      <stop offset="55%" stop-color="#111228"/>
+      <stop offset="100%" stop-color="#0C0D1C"/>
+    </linearGradient>
+    <radialGradient id="glow-a-dual" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-b-dual" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke-dual" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#643CC8"/>
+    </linearGradient>
+    <pattern id="dots-dual" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.25" fill="#ffffff" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-dual)"/>
+  <rect width="800" height="600" fill="url(#dots-dual)"/>
+  <ellipse cx="640" cy="90" rx="340" ry="290" fill="url(#glow-a-dual)"/>
+  <ellipse cx="120" cy="540" rx="340" ry="300" fill="url(#glow-b-dual)"/>
+  <g fill="none" stroke="url(#stroke-dual)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.45">
+    <circle cx="330" cy="300" r="150" opacity="0.7"/>
+    <circle cx="470" cy="300" r="150"/>
+    <path d="M330 180 a150 150 0 0 1 0 240" opacity="0.4"/>
+    <path d="M400 300 l70 -46 v92 z" opacity="0.9"/>
+    <path d="M400 300 l70 46 v-92 z"/>
+  </g>
+</svg>

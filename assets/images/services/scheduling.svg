@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <defs>
+    <linearGradient id="bg-scheduling" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141628"/>
+      <stop offset="55%" stop-color="#0F1120"/>
+      <stop offset="100%" stop-color="#0B0D18"/>
+    </linearGradient>
+    <radialGradient id="glow-a-scheduling" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#F566AC" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F566AC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-b-scheduling" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke-scheduling" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F566AC"/>
+      <stop offset="50%" stop-color="#7549E6"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <pattern id="dots-scheduling" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="#ffffff" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-scheduling)"/>
+  <rect width="800" height="600" fill="url(#dots-scheduling)"/>
+  <ellipse cx="150" cy="120" rx="330" ry="290" fill="url(#glow-a-scheduling)"/>
+  <ellipse cx="700" cy="520" rx="340" ry="300" fill="url(#glow-b-scheduling)"/>
+  <g fill="none" stroke="url(#stroke-scheduling)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+    <rect x="170" y="140" width="460" height="380" rx="28"/>
+    <path d="M170 236 h460" opacity="0.8"/>
+    <path d="M258 140 v-40 M542 140 v-40" opacity="0.9"/>
+    <circle cx="252" cy="308" r="15" opacity="0.75"/>
+    <circle cx="342" cy="308" r="15" opacity="0.75"/>
+    <circle cx="432" cy="308" r="15" opacity="0.75"/>
+    <circle cx="522" cy="308" r="15"/>
+    <circle cx="252" cy="400" r="15" opacity="0.75"/>
+    <circle cx="342" cy="400" r="15"/>
+    <circle cx="432" cy="400" r="15" opacity="0.75"/>
+    <circle cx="522" cy="400" r="15" opacity="0.75"/>
+  </g>
+</svg>

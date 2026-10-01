@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <defs>
+    <linearGradient id="bg-data" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161534"/>
+      <stop offset="55%" stop-color="#111228"/>
+      <stop offset="100%" stop-color="#0C0D1C"/>
+    </linearGradient>
+    <radialGradient id="glow-a-data" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-b-data" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke-data" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#643CC8"/>
+    </linearGradient>
+    <pattern id="dots-data" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.25" fill="#ffffff" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-data)"/>
+  <rect width="800" height="600" fill="url(#dots-data)"/>
+  <ellipse cx="640" cy="90" rx="340" ry="290" fill="url(#glow-a-data)"/>
+  <ellipse cx="120" cy="540" rx="340" ry="300" fill="url(#glow-b-data)"/>
+  <g fill="none" stroke="url(#stroke-data)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.45">
+    <path d="M170 470 h470" opacity="0.6"/>
+    <path d="M170 470 v-290" opacity="0.6"/>
+    <rect x="220" y="360" width="58" height="110" rx="12" opacity="0.65"/>
+    <rect x="310" y="300" width="58" height="170" rx="12" opacity="0.75"/>
+    <rect x="400" y="340" width="58" height="130" rx="12" opacity="0.65"/>
+    <rect x="490" y="240" width="58" height="230" rx="12"/>
+    <path d="M240 300 L400 210 L540 150" opacity="0.95"/>
+    <circle cx="240" cy="300" r="13" opacity="0.9"/>
+    <circle cx="400" cy="210" r="13" opacity="0.9"/>
+    <circle cx="540" cy="150" r="13"/>
+  </g>
+</svg>
