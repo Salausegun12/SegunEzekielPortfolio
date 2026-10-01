@@ -4,18 +4,19 @@
 
 /* ─── Contact Delivery Config ──────────────────────────────────
  *  Web3Forms (https://web3forms.com) delivers submissions to your
- *  inbox. Paste the access key from your Web3Forms dashboard into
- *  accessKey below to activate it.
+ *  inbox.
  *
- *  While accessKey is still the placeholder, the form falls back to
- *  WhatsApp so enquiries are never silently lost.
+ *  NOTE: this is a static site, so this key is visible to anyone who
+ *  views the page source. Lock the key to your domain in the
+ *  Web3Forms dashboard, and never reuse it on another site.
+ *
+ *  If accessKey is cleared, submissions fall back to WhatsApp so
+ *  enquiries are never silently lost.
  * ────────────────────────────────────────────────────────────── */
-const WEB3FORMS_KEY_PLACEHOLDER = 'PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE';
-
 const CONTACT_CONFIG = {
   whatsapp: '2348140153779',
   formEndpoint: 'https://api.web3forms.com/submit',
-  accessKey: WEB3FORMS_KEY_PLACEHOLDER,
+  accessKey: '53292eb2-4df6-4a08-b26b-b9483d3d2bf3',
   fromName: 'Portfolio Contact Form',
   subject: 'New enquiry from your portfolio'
 };
@@ -23,7 +24,7 @@ const CONTACT_CONFIG = {
 /** True once a real Web3Forms key has been supplied. */
 function web3FormsReady() {
   const key = (CONTACT_CONFIG.accessKey || '').trim();
-  return !!CONTACT_CONFIG.formEndpoint && !!key && key !== WEB3FORMS_KEY_PLACEHOLDER;
+  return !!CONTACT_CONFIG.formEndpoint && !!key;
 }
 
 /* ─── In-page scroll helper ────────────────────────────────────
